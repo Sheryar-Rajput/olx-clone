@@ -1,0 +1,212 @@
+.flex-container{
+    display: flex;
+    color: #002f34;
+    height: auto;
+    background-color: #f7f8f8;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+}
+.right{
+display: flex;
+
+
+}
+.logo{
+    height: 60px;
+    width: 100px;
+    margin: 20px;
+
+}
+.btn-nav{
+    margin-left: 20px;
+    border: none;
+    justify-content: space-around;
+    background-color: #f7f8f8;
+    font-size: larger;
+
+}
+
+.nav-searchbox{
+    border: solid;
+    border-width: thin;
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+}
+.nav-input{
+    width: 90%;
+    height: 38px;
+    border: none;
+   
+}
+.nav-search{
+    background-color:002f34 ;
+    align-items: center;
+    padding: 6px;
+
+}
+
+
+
+
+
+/* NavigationBar */
+.top-navbar{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    height: 68px;
+  }
+  code {
+    font-family: 'Courier New',monospace;
+  }
+  .logo{
+    background:transparent;
+    width: 60px;
+    height: 60px;
+  }
+  /* Location Search Bar Section */
+  .input-icons ion-icon{
+    position: absolute; 
+    width: 25px;
+    height: 25px;
+    fill-rule: evenodd;
+    padding: 10px; 
+    min-width: 50px; 
+    text-align: center; 
+    margin-top: 12px;
+    margin-left: 0px;
+  }
+  .input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+  } 
+  .location{
+      margin-top: 9px;
+      height: 48px;
+      width: 100%;
+      outline: 0;
+      border-width: 0;
+      font-size: 16px;
+      padding: 0 8px;
+      border: 2px solid #002f34;
+      border-radius: 4px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background: #fff;
+      padding: 0 0 0 16px;
+      text-align: center;
+  }
+  .nav-item-location{
+    width: 300px;
+    margin-left: 10px;
+  }
+  .dropdown-menu{
+    width: 300px;
+  }
+  .chevron-down-header ion-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: -12px;
+    fill: #002f34;
+  }
+  .nav-item-find{
+      width: 500px;
+  }
+  /* Find Search Box Section */
+  .find{
+    margin-top: 9px;
+    margin-left: 10px;
+    height: 48px;
+    width: 100%;
+    outline: 0;
+    border-width: 0;
+    font-size: 16px;
+    padding: 0 8px;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+    padding: 0 0 0 16px;
+    text-align: left;
+  }
+  .search-icon{
+      min-width: 48px;
+      height: 48px;
+      cursor: pointer;
+      background-color: #002f34;
+      border-radius: 0 4px 4px 0;
+      margin-top: 9px;
+  }
+  .search-icon ion-icon{
+    width: 25px;
+    height: 25px;
+    color: white;
+  }
+  a {
+    color: #002f34;
+    text-decoration: none;
+  }
+  
+  a:hover 
+  { 
+     text-decoration:none; 
+     cursor:pointer;  
+  }
+  .text-login{
+      margin-top: 13px;
+      color: #002f34;
+      border-bottom: 2px solid #002f34;
+      padding: 0;
+      height: auto;
+      margin-right: 30px;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+  }
+  .chat-icon{
+    margin-top: 9px;
+    border-color: black;
+  }
+  .user-icon{
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+  }
+  .chevron-down ion-icon{
+  
+    width: 25px;
+    height: 25px;
+  }
+  /* Sell Button Design */
+  .sell-button{
+    width:90px;
+    background-color: white;
+    border-top:5px solid #23E5DB;
+    border-left:5px solid #FFCE32;
+    border-right:5px solid yellow;
+    border-bottom:5px solid #3A77FF;
+    height:50px;color:black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  /* category-section */
+  .category-section{
+    margin-top: 60px;
+  }
+  .category-section a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  .category-section .navbar-brand{
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    color: #002f34;
+  }
