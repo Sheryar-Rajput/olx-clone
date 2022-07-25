@@ -40,7 +40,7 @@ function AppBar() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-              width='500'
+              size='lg'
             />
             <Button variant="outline-success">Search</Button>
           </Form>

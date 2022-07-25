@@ -20,12 +20,11 @@ function Signup() {
 
   const onSignUp = async() => {
    try{
-    const temp =  await  register(email, password, number, name,profileImage)
+    const userCredential =  await  register(email, password, number, name,profileImage)
     navigate("/Dashboard") 
    } 
-   catch{
-     alert("ni chala")
-   }
+   catch(err){
+console.log(err.message)   }
   }
   return (
     <div className='form'>
