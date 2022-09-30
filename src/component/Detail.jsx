@@ -11,7 +11,7 @@ import Image from 'react-bootstrap/Image'
 import AppBar from './navbar';
 import Footer from './footer'
 import { FormatUnderlinedSharp } from '@material-ui/icons';
-import { Box, Typography,  } from '@material-ui/core';
+import { Box, Typography, } from '@material-ui/core';
 import { Stack } from '@mui/material';
 function Detail() {
   const params = useParams()
@@ -31,58 +31,65 @@ function Detail() {
     <div >
       <AppBar />
       <Stack >
-        <Box sx={{display : { lg : 'flex',md : 'flex' }}} >
-        <Box sx={{ width: {lg : "70%",md : "100%",sm : '100%'},display : { lg : 'flex',md : 'flex',sm: 'flex'  }}} >
-         
-          <Carousel>
-            {data?.urls?.map((urls) => (
-              <Carousel.Item>
-                <Image
-                fluid={true}
-                  src={urls}
-                 
-                 />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+        <Box sx={{ display: { lg: 'flex', md: 'flex' },padding : 10 }} >
+          <Box sx={{
+            width: { lg: "60%", md: "100%", sm: '100%' },
+            display: { lg: 'flex', md: 'flex', sm: 'flex' },
+            backgroundColor: '#F0F0F0',
+            justifyContent : 'center',
+            alignItems : 'center',
+            
+          }} >
 
-        </Box>
-        <Box sx={{ width: "30%",display: { md: 'flex', sm: 'block' } }} >
-          <Box sx={{padding : 20}} >
-          
-            <Typography variant='h5'>
-              Title
-            </Typography>
-            <Typography variant='body1'>
-              {data.description}
-            </Typography>
-            <Typography variant='h5'>
-              Price
-            </Typography>
-            <Typography variant='body1'>
-              {data.price}
-            </Typography>
+            <Carousel>
+              {data?.urls?.map((urls) => (
+                <Carousel.Item>
+                  <Image
+                    src={urls}
+                    width='500'
+                    height='350'
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
 
-            <Typography variant='h5'>
-              Description
-            </Typography>
-            <Typography variant='body1'>
-              {data.description}
-            </Typography>
           </Box>
-          <Box  sx={{padding : 20 ,display: { md: 'flex', sm: 'block' } }}>
-<Typography variant='h4' align='center' >
-  Contact Seller
-  </Typography>            <Avatar src={avatar} />
-            <h3> Name   </h3>
-            <p>  Sheryar  </p>
+          <Box sx={{ width: "40%", display: { md: 'flex', sm: 'block' } }} >
+            <Box sx={{ padding: 20 }} >
 
-            <h3> Phone  </h3>
-            <p>  03461120174  </p>
+              <Typography variant='h5'>
+                Title
+              </Typography>
+              <Typography variant='body1'>
+                {data.description}
+              </Typography>
+              <Typography variant='h5'>
+                Price
+              </Typography>
+              <Typography variant='body1'>
+                {data.price}
+              </Typography>
+
+              <Typography variant='h5'>
+                Description
+              </Typography>
+              <Typography variant='body1'>
+                {data.description}
+              </Typography>
+            </Box>
+            <Box sx={{ padding: 20, display: { md: 'flex', sm: 'block' } }}>
+              <Typography variant='h4' align='center' >
+                Contact Seller
+              </Typography>            <Avatar src={avatar} />
+              <h3> Name   </h3>
+              <p>  Sheryar  </p>
+
+              <h3> Phone  </h3>
+              <p>  03461120174  </p>
+            </Box>
+          </Box>
         </Box>
-      </Box>
-      </Box>
-</Stack>
+      </Stack>
 
 
 

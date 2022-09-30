@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import  addUser  from '../store/ads/adsAction'
+import  {addUser}  from '../store/users/userAction'
 
 import swal from 'sweetalert';
 function SignIn() {
@@ -17,6 +17,7 @@ function SignIn() {
   const onSignin = async() => {
     try{
     const user =  await login(email, password)
+    console.log('this user',user)
     dispatch(addUser(user))
     navigate("/Dashboard")
     swal("Successfully login", "welcome", "success");

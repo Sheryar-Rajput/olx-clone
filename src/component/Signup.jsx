@@ -5,6 +5,9 @@ import '../App.css'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import  {addUser}  from '../store/users/userAction'
+
 function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -12,6 +15,7 @@ function Signup() {
   const [name, setName] = useState("")
   const [profileImage,setProfileImage] = useState("")
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   const uploadProfile = (e)=>{
     setProfileImage(e.target.files)
     console.log(profileImage.name)
@@ -21,6 +25,7 @@ function Signup() {
   const onSignUp = async() => {
    try{
     const userCredential =  await  register(email, password, number, name,profileImage)
+    dispatch(addUser(userCredential))
     navigate("/Dashboard") 
    } 
    catch(err){
